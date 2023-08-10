@@ -11,8 +11,7 @@ import { useStateContext } from "../contexts/ContextProvider"
 
 const Nav = () => {
     const [isActive, setIsActive] = useState(false)
-    const {activeChat} = useStateContext()
-    console.log(activeChat)
+    const {handleClick,isClicked} = useStateContext()
   return (
     <div className="">
        <div className={`bg-white h-screen ${isActive ? "visible  overflow-y-auto" : 'hidden' }  w-48 md:w-64 px-4 md:flex flex-col gap-4 pl-2 py-4 fixed my-12 md:my-0`}>
@@ -55,7 +54,7 @@ const Nav = () => {
         </button>
         <div className="flex items-center gap-5 md:gap-12 py-2 mx-2 md:mx-12">
 
-        <button><BsFillCartCheckFill/></button>
+        <button onClick={handleClick}><BsFillCartCheckFill/></button>
         <button><BsChatLeftDotsFill/></button>
         <button><IoIosNotifications/></button>
         <button>
