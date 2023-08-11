@@ -40,7 +40,6 @@ const Nav = () => {
             )
           })
         }
-
       </div>
      
   </div>
