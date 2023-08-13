@@ -5,7 +5,8 @@ const StateContext = createContext();
 const initialState = {
 chat : false,
 cart : false,
-profile : false
+profile : false,
+notification : false
 }
 
 export const ContextProvider = ({children})=>{

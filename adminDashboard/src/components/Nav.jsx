@@ -6,12 +6,16 @@ import { BsChatLeftDotsFill } from "react-icons/bs"
 import {BsFillCartCheckFill} from "react-icons/bs"
 import {IoIosNotifications} from "react-icons/io"
 import avatar from '../assets/data/avatar.jpg'
+import {AiFillDownCircle} from 'react-icons/ai'
 import { useStateContext } from "../contexts/ContextProvider"
 
 
 const Nav = () => {
     const [isActive, setIsActive] = useState(false)
     const {handleClick,isClicked} = useStateContext()
+
+    console.log(isClicked)
+
   return (
     <div className="">
        <div className={`bg-white h-screen ${isActive ? "visible  overflow-y-auto" : 'hidden' }  w-48 md:w-64 px-4 md:flex flex-col gap-4 pl-2 py-4 fixed my-12 md:my-0`}>
@@ -54,11 +58,21 @@ const Nav = () => {
         </button>
         <div className="flex items-center gap-5 md:gap-12 py-2 mx-2 md:mx-12">
 
-        <button onClick={handleClick}><BsFillCartCheckFill/></button>
-        <button><BsChatLeftDotsFill/></button>
-        <button><IoIosNotifications/></button>
-        <button>
+        <button onClick={()=>{
+          handleClick("cart")
+        }}><BsFillCartCheckFill/></button>
+        <button onClick={()=>{
+          handleClick("chat")
+        }}><BsChatLeftDotsFill/></button>
+        <button onClick={()=>{
+          handleClick("notification")
+        }}><IoIosNotifications/></button>
+        <button onClick={()=>{
+          handleClick("profile")
+        }} className="flex items-center">
           <img src={avatar} className="w-8 h-8 rounded-3xl"/>
+          <h2 className="text-sm">Hi, Michale</h2>
+          <AiFillDownCircle className="h-4"/>
         </button>
         </div>
       </div>
