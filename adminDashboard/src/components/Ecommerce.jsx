@@ -30,6 +30,7 @@ const Ecommerce = () => {
                 <div>
                 <h2 className='text-3xl font-bold'>48,432$</h2>
                 <p className='text-sm font-thin'>Expense</p>
+                
                 </div>
 
             </div>
