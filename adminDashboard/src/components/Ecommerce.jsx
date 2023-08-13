@@ -20,7 +20,7 @@ const Ecommerce = () => {
 
     </div>
     <div className='py-10'>
-        <h1 className='text-4xl'>Revunue Updates</h1>
+        <h1 className='text-4xl'>Revenue Updates</h1>
         <div className='px-4'>
             <div className='flex flex-col gap-4'>
                 <div className='py-4'>
@@ -30,7 +30,7 @@ const Ecommerce = () => {
                 <div>
                 <h2 className='text-3xl font-bold'>48,432$</h2>
                 <p className='text-sm font-thin'>Expense</p>
-                
+
                 </div>
 
             </div>
