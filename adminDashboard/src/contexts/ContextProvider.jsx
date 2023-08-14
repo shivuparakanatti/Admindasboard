@@ -6,7 +6,6 @@ chat : false,
 cart : false,
 profile : false,
 notification : false
-
 }
 
 export const ContextProvider = ({children})=>{
