@@ -17,6 +17,7 @@ export const ContextProvider = ({children})=>{
       
         setIsClicked({...initialState,[clicked]:true})
     }
+    
     return (
        <StateContext.Provider value={
         {
