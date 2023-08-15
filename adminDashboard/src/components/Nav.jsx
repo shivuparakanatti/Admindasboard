@@ -13,7 +13,6 @@ import { useStateContext } from "../contexts/ContextProvider"
 const Nav = () => {
     const [isActive, setIsActive] = useState(false)
     const {handleClick,isClicked} = useStateContext()
-
     console.log(isClicked)
 
   return (
