@@ -8,6 +8,7 @@ import {IoIosNotifications} from "react-icons/io"
 import avatar from '../assets/data/avatar.jpg'
 import {AiFillDownCircle} from 'react-icons/ai'
 import { useStateContext } from "../contexts/ContextProvider"
+import { Link } from "react-router-dom"
 
 
 const Nav = () => {
@@ -34,7 +35,7 @@ const Nav = () => {
                       return (
                         <div key={i} className="flex items-center pl-4 my-2 gap-2 hover:bg-slate-200 rounded-lg px-1 py-1">
                           {e.icon}
-                          <a className="">{e.name}</a>
+                          <a className=""><Link to={`/${e.name}`}>{e.name}</Link></a>
                           </div>
                       )
                     })
@@ -71,7 +72,7 @@ const Nav = () => {
           <AiFillDownCircle className="h-4"/>
         </button>
         </div>
-        
+
       </div>
       <div>
       </div>
