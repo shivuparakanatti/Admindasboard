@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Ecommerce from './components/Ecommerce'
 import { Route,Routes } from 'react-router-dom'
 import Orders from './pages/Orders'
+import Employes from './pages/Employes'
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' Component={Ecommerce} />
       <Route path='/ecommerce' Component={Ecommerce} />
       <Route path='/orders' Component={Orders} />
+      <Route path='/employees' Component={Employes} />
     </Routes>
     </>
   )
