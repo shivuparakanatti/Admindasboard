@@ -26,7 +26,6 @@ const Employes = () => {
                         <p className='w-24'>{ele.Country}</p>
                         <p className='w-32'>{ele.HireDate}</p>
                         <p>{ele.ReportsTo}</p>
-
                        </li>
                     )
                 })
