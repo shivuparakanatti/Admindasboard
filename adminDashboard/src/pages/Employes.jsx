@@ -2,6 +2,7 @@ import React from 'react'
 import { employeesData } from '../assets/data/dummy'
 
 const Employes = () => {
+  
   return (
     <div className='md:ml-64 flex flex-col px-10 '>
         <h1 className='text-4xl'>Employees Details</h1>
