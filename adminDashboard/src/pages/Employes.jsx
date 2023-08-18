@@ -14,7 +14,6 @@ const Employes = () => {
             <li>Reports To</li>
         </ul>
       
-      
         <ul className='flex  flex-col gap-5'>
             {
                 employeesData.map(ele=>{
