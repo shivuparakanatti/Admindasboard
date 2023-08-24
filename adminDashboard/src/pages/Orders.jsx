@@ -24,7 +24,7 @@ const Orders = () => {
                         <p className='w-14'>${item.TotalAmount}</p>
                         <p className={`w-20 ${item.Status=='canceled' ? 'bg-red-500' : 'bg-blue-600'} text-white rounded-xl px-2 py-1`}>{item.Status}</p>
                         <p>{item.OrderID}</p>
-                        
+                      
                         </li>
                 })
             }
