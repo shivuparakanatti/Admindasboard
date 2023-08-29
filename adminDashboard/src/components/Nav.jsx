@@ -16,7 +16,7 @@ const Nav = () => {
     console.log(isClicked)
 
   return (
-    <div className="">
+    <div className="z-1000">
        <div className={`bg-white h-screen ${isActive ? "visible  overflow-y-auto" : 'hidden' }  w-48 md:w-64 px-4 md:flex flex-col gap-4 pl-2 py-4 fixed my-12 md:my-0`}>
       <h1 className="text-2xl font-bold">Admin Panel</h1>
       

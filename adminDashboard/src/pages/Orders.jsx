@@ -1,9 +1,25 @@
 import { ordersData } from '../assets/data/dummy'
 
+import DataTable from 'react-data-table-component';
+
 const Orders = () => {
+
+    const columns = [
+        {
+            name: 'CustomerName',
+            selector: row => row.CustomerName,
+        },
+        {
+            name: 'Year',
+            selector: row => row.year,
+        },
+    ];
+    
+   
   return (
     <div className='flex  my-10 flex-col mx-4 md:ml-72'>
-        <ul className='flex  justify-start gap-12 md:gap-24 items-start text-2xl mb-10'>
+       
+       <ul className='flex  justify-start gap-12 md:gap-24 items-start text-2xl mb-10'>
         <li className='w-10 '>Image</li>
             <li className='w-32'>Item</li>
             <li className='w-28'>Customer name</li>
@@ -29,8 +45,7 @@ const Orders = () => {
                 })
             }
         </ul>
-        
-        </div>
+    </div>
   )
 }
 

@@ -33,7 +33,7 @@ const Employes = () => {
             <li>Reports To</li>
         </ul>
     
-        <ul className='flex  flex-col gap-5'>
+        <ul className='flex  flex-col gap-5 scale-in-bottom'>
             {
                result&& result.map((ele,i)=>{
                     return (

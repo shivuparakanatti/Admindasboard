@@ -30,8 +30,8 @@ const data = {
         {
             earningData.map((ele,i)=>{
                 return (
-                    <div key={i} className='flex flex-col justify-center items-center mx-4'>
-                        <button className='text-4xl p-2' style={{color : ele.iconColor, background : ele.iconBg} }> {ele.icon}</button>
+                    <div key={i} className='flex flex-col justify-center items-center mx-4 scale-in-bottom'>
+                        <button className='text-4xl p-2 scale-in-bottom' style={{color : ele.iconColor, background : ele.iconBg} }> {ele.icon}</button>
                         <button className='text-black '> {ele.amount}</button>
                         <button className='text-black '> {ele.title} {ele.percentage}</button>
                        
@@ -45,7 +45,7 @@ const data = {
         <h1 className='text-4xl text-blue-600'>Revenue Updates</h1>
         <div className='px-4 flex flex-col mx-5 items-end md:flex-row'>
             <div className='flex flex-col gap-4'>
-                <div className='flex items-center justify-between '>
+                <div className='flex items-center justify-between  '>
 
                 <div className='my-4 '>
                     <h2 className='text-3xl font-bold'>93,432$</h2>
@@ -58,7 +58,7 @@ const data = {
 
                 </div>
                 </div>
-                <div className='mr-40'>
+                <div className='mr-40 '>
 
                     <Line data={data} />
                 </div>
