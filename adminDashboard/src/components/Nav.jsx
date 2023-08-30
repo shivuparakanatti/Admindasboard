@@ -10,6 +10,7 @@ import {AiFillDownCircle} from 'react-icons/ai'
 import { useStateContext } from "../contexts/ContextProvider"
 import { Link } from "react-router-dom"
 
+
 const Nav = () => {
     const [isActive, setIsActive] = useState(false)
     const {handleClick,isClicked} = useStateContext()
