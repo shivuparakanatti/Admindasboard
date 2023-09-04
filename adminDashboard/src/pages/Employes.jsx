@@ -5,6 +5,7 @@ const Employes = () => {
     const [searchRes,setSearchRes] = useState('')
     const [result,setResult] = useState(employeesData)
 
+
     const handleInput=(e)=>{
         const value = e.target.value
        setSearchRes(value)
