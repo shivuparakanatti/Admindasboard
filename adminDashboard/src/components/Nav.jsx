@@ -48,6 +48,7 @@ const Nav = () => {
         }
       </div>
      
+    
   </div>
       <div className="text-3xl  flex justify-between bg-white">
         <button onClick={()=>{setIsActive(!isActive)}}>
