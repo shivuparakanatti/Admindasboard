@@ -11,7 +11,6 @@ import { useStateContext } from "../contexts/ContextProvider"
 import { Link } from "react-router-dom"
 
 
-
 const Nav = () => {
   
     const [isActive, setIsActive] = useState(false)
