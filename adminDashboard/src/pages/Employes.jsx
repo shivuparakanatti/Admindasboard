@@ -12,7 +12,6 @@ const Employes = () => {
     }
 
 
-
     useEffect(()=>{
       
         const res = employeesData.filter(ele=>{
