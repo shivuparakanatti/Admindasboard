@@ -1,7 +1,6 @@
 import {useEffect, useState} from 'react'
 import { employeesData } from '../assets/data/dummy'
 
-
 const Employes = () => {
     const [searchRes,setSearchRes] = useState('')
     const [result,setResult] = useState(employeesData)
