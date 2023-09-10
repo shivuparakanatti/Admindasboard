@@ -11,7 +11,6 @@ const Employes = () => {
        setSearchRes(value)
     }
 
-
     useEffect(()=>{
       
         const res = employeesData.filter(ele=>{
