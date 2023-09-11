@@ -22,6 +22,7 @@ const data = {
     },
   ],
 };
+
    
     return (
    <div className='z-10000 mx-10 md:mx-80 my-10'>
