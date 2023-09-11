@@ -41,6 +41,7 @@ const data = {
         }
 
     </div>
+    
     <div className='py-20  flex flex-col items-center justify-center '>
         <h1 className='text-4xl text-blue-600'>Revenue Updates</h1>
         <div className='px-4 flex flex-col mx-5 items-end md:flex-row'>
