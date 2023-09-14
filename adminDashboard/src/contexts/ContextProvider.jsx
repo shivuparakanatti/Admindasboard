@@ -24,7 +24,7 @@ export const ContextProvider = ({children})=>{
             handleClick,isClicked
         }
        }>
-    
+  
         {children}
         
        </StateContext.Provider>
