@@ -12,7 +12,7 @@ import { Link } from "react-router-dom"
 
 const Nav = () => {
   
-  
+
     const [isActive, setIsActive] = useState(false)
     const {handleClick,isClicked} = useStateContext()
     console.log(isClicked)
