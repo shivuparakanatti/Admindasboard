@@ -18,7 +18,6 @@ function App() {
       <Route path='/employees' Component={Employes} />
     </Routes>
   
-  
     </>
   )
 }
