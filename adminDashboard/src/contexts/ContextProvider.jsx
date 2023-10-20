@@ -9,7 +9,6 @@ profile : false,
 notification : false
 }
 
-
 export const ContextProvider = ({children})=>{
   
     const [isClicked,setIsClicked] = useState(initialState)
