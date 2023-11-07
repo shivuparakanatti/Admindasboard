@@ -12,6 +12,7 @@ const Orders = () => {
             <li className='w-24'>Status</li>
             <li>Order ID</li>
         </ul>
+        
       
       
        
