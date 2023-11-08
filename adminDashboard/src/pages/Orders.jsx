@@ -1,6 +1,5 @@
 import { ordersData } from '../assets/data/dummy'
 
-import DataTable from 'react-data-table-component';
 
 const Orders = () => {
 
@@ -29,7 +28,7 @@ const Orders = () => {
         </ul>
        
         <ul className='flex flex-col gap-5'>
-           
+        
            
             {
                 ordersData.sort().map(item=>{
@@ -40,7 +39,7 @@ const Orders = () => {
                         <p className='w-14'>${item.TotalAmount}</p>
                         <p className={`w-20 ${item.Status=='canceled' ? 'bg-red-500' : 'bg-blue-600'} text-white rounded-xl px-2 py-1`}>{item.Status}</p>
                         <p>{item.OrderID}</p>
-                        
+                      
                         </li>
                 })
             }
