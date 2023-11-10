@@ -11,6 +11,7 @@ import { useStateContext } from "../contexts/ContextProvider"
 import { Link } from "react-router-dom"
 
 const Nav = () => {
+
     const [isActive, setIsActive] = useState(false)
     const {handleClick,isClicked} = useStateContext()
     console.log(isClicked)
@@ -38,13 +39,14 @@ const Nav = () => {
                       )
                     })
                   }
-            
+          
                 </div>
             )
           })
         }
       </div>
      
+    
   </div>
       <div className="text-3xl  flex justify-between bg-white">
         <button onClick={()=>{setIsActive(!isActive)}}>
@@ -70,6 +72,7 @@ const Nav = () => {
           <AiFillDownCircle className="h-4"/>
         </button>
         </div>
+
 
       </div>
       <div>

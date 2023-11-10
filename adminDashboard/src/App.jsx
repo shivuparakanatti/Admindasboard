@@ -10,9 +10,9 @@ function App() {
 
   return (
     <>
+    
+
     <Nav/>
-    
-    
     <Routes>
       <Route path='/' Component={Ecommerce} />
       <Route path='/ecommerce' Component={Ecommerce} />

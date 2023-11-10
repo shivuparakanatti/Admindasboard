@@ -20,9 +20,9 @@ const data = {
       borderColor: "rgb(35,41,4)",
       data: [18098, 20000, 23098, 35908, 45874, 48432],
     },
-
   ],
 };
+
    
     return (
    <div className='z-10000 mx-10 md:mx-80 my-10'>
@@ -41,6 +41,7 @@ const data = {
         }
 
     </div>
+    
     <div className='py-20  flex flex-col items-center justify-center '>
         <h1 className='text-4xl text-blue-600'>Revenue Updates</h1>
         <div className='px-4 flex flex-col mx-5 items-end md:flex-row'>
@@ -73,6 +74,7 @@ const data = {
         </div>
     </div>
    </div>
+  
   )
 }
 

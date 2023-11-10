@@ -11,7 +11,7 @@ const Employes = () => {
     }
 
     useEffect(()=>{
-       
+      
         const res = employeesData.filter(ele=>{
             return ele.Name.toLocaleLowerCase().includes(searchRes.toLocaleLowerCase())
         })
