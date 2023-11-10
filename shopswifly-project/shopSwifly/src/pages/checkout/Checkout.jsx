@@ -14,6 +14,7 @@ const Checkout = () => {
   const user= useSelector(state=>{
     return state.auth
   })
+  console.log(user)
 
   const date = Date()
   
@@ -93,7 +94,15 @@ useEffect(()=>{
 
   const handlePay=(e)=>{
     e.preventDefault()
-    setPopup(true)
+    if(user.isLoggedIn){
+
+      setPopup(true)
+    }
+    else{
+      alert('please log in with your account ')
+      navigate('/login')
+      
+    }
     //const confirmation = confirm("Are you sure, You want to pay" +100)
    
 
@@ -118,6 +127,7 @@ useEffect(()=>{
             placeholder="Enter your card number"
             value={cardNumber}
         onChange={handleCardNumberChange}
+        required
           />
         </div>
         <div className="mb-4">
@@ -127,7 +137,7 @@ useEffect(()=>{
             id="expiryDate"
             className="w-full px-3 py-2 border rounded-md border-gray-400 focus:outline-none focus:border-blue-500"
             placeholder="MM/YY"
-            
+            required
             
           />
         </div>
@@ -155,6 +165,7 @@ useEffect(()=>{
             onChange={(e)=>{
               setAddress(e.target.value)
             }}
+            required
           ></textarea>
         </div>
         <button

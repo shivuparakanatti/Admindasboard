@@ -17,6 +17,7 @@ import Cart from './pages/cart/Cart'
 import Admin from './pages/admin/Admin'
 import Checkout from './pages/checkout/Checkout'
 import MyOrder from './pages/orderDetails/MyOrder'
+import NameCard from './components/NameCard'
 
 
 function App() {

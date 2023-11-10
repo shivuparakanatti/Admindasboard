@@ -72,7 +72,7 @@ const Header = () => {
         <div className="hidden md:flex gap-5 ">
           {}
           {userName && (
-            <Link to={""} className="">
+            <Link to={"/AboutMe"} className="" >
               <h1 className="hover:text-red-400 cursor-pointer flex items-center justify-center"><BiSolidUserCircle/>Hi,{userName}</h1>
             </Link>
           )}
