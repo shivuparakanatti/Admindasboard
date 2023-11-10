@@ -13,7 +13,6 @@ const Checkout = () => {
   const user= useSelector(state=>{
     return state.auth
   })
-  console.log(user)
 
   const date = Date()
   
